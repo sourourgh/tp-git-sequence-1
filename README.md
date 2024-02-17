@@ -14,7 +14,13 @@ Le contenu d'un fichier source C++ :
 ```cpp
 #ifndef FONCTION_BIENVENUE_H
 #define FONCTION_BIENVENUE_H
-void afficherBienvenue();
+void afficherBienvenue() {
+    std::cout << "Bonjour tout le monde !" << std::endl;
+}
+void afficherBienvenue(const std::string& message) {
+    std::cout << message << std::endl;
+}
+
 #endif // FONCTION_BIENVENUE_H
 # Bienvenue
 
